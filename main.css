@@ -1,0 +1,1868 @@
+/*------------Подключение шрифтов------------*/
+
+@font-face {
+  font-family: 'Museo Sans 700';
+  src: url('../fonts/MuseoSansCyrl-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-700.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-700.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-700.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+/*------------Спецификация------------*/
+
+body {
+    font-family: 'Museo Sans 300', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before
+*:after {
+	box-sizing: border-box;
+}
+
+input, textarea, button {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Museo Sans 700';
+}
+
+h1 {
+	font-size: 58px;
+}
+
+h2 {
+    font-size: 29px;
+}
+
+h3 {
+	
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+p {
+	margin: 0;
+}
+
+a, a:hover, a:active {
+	display: block;
+	text-decoration: none;
+}
+
+.container-fluid_plane {
+    padding: 0;
+}
+
+
+
+/*-----------Первая секция-----------*/
+
+.header {
+    
+}
+
+.nav {
+    background: #c8cbda;
+    padding-top: 18px;
+    padding-bottom: 11px;
+    border-top: 5px solid #58647a;
+    border-bottom: 4px solid #bdbfda;
+}
+
+.logo {
+ 
+}
+
+.menu-burger {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu__item {
+    font-family: 'Museo Sans 700';
+    font-size: 17px;
+    margin-left: 28px;
+    padding-bottom: 10px;
+}
+
+.menu__link {
+    color: #3f4b60;
+    position: relative;
+}
+
+.menu__link:hover {
+    color: #3f4b60;
+}
+
+.menu__link:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 3px solid #58647a;
+	transform: scale(2);
+	opacity: 0;
+	transition: all 0.3s ease;
+	margin-top: 25px;
+}
+
+.menu__link:hover:after {
+	transform: scaleY(1);
+	opacity: 1;
+}
+
+.tel {
+    font-family: 'Museo Sans 700';
+    font-size: 13px;
+    color: #fff;
+    background: #1cb883;
+    width: 100%;
+    max-width: 156px;
+    text-align: center;
+    padding: 8px 0 9px;
+    border-bottom: 4px solid #149d6f;
+    margin-left: auto;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.tel i {
+    color: #46e6b0;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.tel:hover {
+    color: #1cb883;
+    background: #fff;
+    border-bottom: none;
+}
+
+.tel:active {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3) inset;
+}
+
+.offer {
+   padding-top: 88px;
+   padding-bottom: 145px;
+   background: #d2dae2 url(../img/firstbg.png) no-repeat center center / cover;
+   box-shadow: inset 0 -16px rgba(255,255,255,0.47);
+}
+
+.offer__title {
+    color: #081d42;
+    margin-bottom: 10px;
+}
+
+.offer__subtitle {
+    font-family: 'Museo Sans 100';
+    font-size: 29px;
+    color: #081d42;
+    max-width: 470px;
+    margin-bottom: 22px;
+    line-height: 1.3em;
+}
+
+.networks {
+    display: flex;
+    background: #f5f6fa;
+    padding: 7px 21px;
+    max-width: 164px;
+    border-radius: 3px;
+    border: 3px solid #ebf3fe;
+    justify-content: space-between;
+    opacity: 82%;
+}
+
+.networks__link {
+    max-width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.networks__link i {
+    background: #fff;
+}
+
+.networks__link_fb {
+    border: 2px solid #2c60a0;
+    color: #3d6ca8;
+    padding: 3px 5px 5px 6px;
+}
+
+.networks__link_fb:hover {
+    color: #3d6ca8;
+    box-shadow: 0 0 10px rgba(0, 142, 255, 1);
+}
+
+.networks__link_tw {
+    border: 2px solid #21c2ff;
+    color: #43c9fd;
+    padding: 3px 5px 5px 5px;
+}
+
+.networks__link_tw:hover {
+    color: #43c9fd;
+    box-shadow: 0 0 10px rgba(0, 142, 255, 1);
+}
+
+.networks__link_tg {
+    border: 2px solid #2ea7d6;
+    color: #25a3d4;
+    padding: 3px 7px 6px 4px;
+}
+
+.networks__link_tg:hover {
+    color: #25a3d4;
+    box-shadow: 0 0 10px rgba(0, 142, 255, 1);
+}
+
+/*-----------Вторая секция-----------*/
+
+.trust {
+    background: #f1f1f3;
+    padding-top: 56px;
+}
+
+.trust__title {
+    color: #081d42;
+    text-align: center;
+}
+
+.list {
+    margin-top: 32px;
+    margin-bottom: 83px;
+}
+
+.list__img {
+    background: #c8cbdb;
+    max-width: 120px;
+    min-height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.list__icon {
+
+}
+
+.list__content {
+    
+}
+
+.list__title {
+    color: #081d42;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.list__text {
+    font-size: 14px;
+    color: #404048;
+    text-align: center;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+}
+
+.trust__btn {
+    font-family: 'Museo Sans 700';
+    font-size: 16px;
+    color: #fff;
+    background: #1cb883;
+    max-width: 170px;
+    text-align: center;
+    padding: 8px 0 9px;
+    border-bottom: 4px solid #149d6f;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    transition: all 0.3s ease-in;
+}
+
+.trust__btn:hover {
+    color: #404048;
+    background: #fff;
+    border-bottom: 4px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.trust__btn:active {
+    box-shadow: 0 0 15px rgba(0,0,0,0.3) inset;
+}
+
+/*-----------Третья секция-----------*/
+
+.pro {
+    padding-top: 100px;
+    padding-bottom: 77px;
+}
+
+.pro__item {
+
+}
+
+.pro__span {
+    font-family: 'Museo Sans 100';
+    font-size: 50px;
+    color: #fff;
+    background: #102e62;
+    max-width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pro__span:hover {
+    background: #c8cbdb;
+    color: #102e62;
+}
+
+.pro__title {
+    font-family: 'Museo Sans 100';
+    color: #081d42;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.pro__title span {
+    color: #b81c31;
+}
+
+.pro__text {
+    font-family: 'Museo Sans 300';
+    font-size: 14px;
+    color: #404048;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 1.3em;
+}
+
+/*-----------Четвертая секция-----------*/
+
+.news {
+    background: #606b80;
+    padding-top: 37px;
+    padding-bottom: 26px;
+}
+
+.news__title {
+    font-size: 23px;
+    color: #a7adb6;
+}
+
+.news__title::after {
+    display: block;
+    content: '';
+    height: 3px;
+    background: #6c7688;
+    width: 100%;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+
+.news__wrap {
+    display: flex;
+}
+
+.news__wrap_first {
+    max-width: 470px;
+}
+
+.news__wrap_second {
+    display: block;
+    margin-left: 30px;
+    max-width: 370px;
+}
+
+.news__text {
+    font-family: 'Museo Sans 300';
+    font-size: 15px;
+    color: #d2d4d9;
+    margin-top: 16px;
+    line-height: 1.2em;
+}
+
+.news__btn {
+    font-family: 'Museo Sans 700';
+    font-size: 16px;
+    max-width: 172px;
+    border: 2px solid #ced1d8;
+    color: #fff;
+    text-align: center;
+    padding: 9px 0 10px 0;
+    margin-top: 36px;
+    background: transparent;
+    transition: all 0.4s ease;
+}
+
+.news__btn:hover {
+    background: #fff;
+    color: #606b80;
+}
+
+.news__btn:active {
+   box-shadow: 0 0 15px rgba(0,0,0,0.6) inset; 
+}
+
+.news__wrapper {
+    margin-top: 25px;
+}
+
+.news__block {
+    margin-bottom: 14px;
+    background: url(../img/truck.png) no-repeat top left;
+    position: relative;
+}
+
+.news__block:after {
+    display: block;
+    content: '';
+    height: 1px;
+    background: #6c7688;
+    width: 100%;
+    margin-top: 14px;
+}
+
+.news__content {
+    margin-left: 70px;
+}
+
+.news__intro {
+    font-family: 'Museo Sans 700';
+    font-size: 13px;
+    color: #dcdee2;
+    line-height: 1.2em;
+}
+
+.news__content span {
+    font-family: 'Museo Sans 100';
+    font-size: 10px;
+    color: #a2a8b3;
+}
+
+/*-----------Пятая секция-----------*/
+
+.aid {
+    padding-top: 40px;
+    background: #3a4456;
+}
+
+.aid__title {
+    color: #c9cace;
+    margin-bottom: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.aid__title:hover {
+    color: #fff;
+}
+
+.aid__list {
+    margin-bottom: 45px;
+}
+
+.aid__item {
+    font-family: 'Museo Sans 300';
+    font-size: 14px;
+    line-height: 21px;t
+    transition: all 0.1s ease;
+}
+
+.aid__item a {
+    color: #a5a8af;
+}
+
+.aid__item a:hover {
+    color: #fff;
+}
+
+/*-----------Подвал-----------*/
+
+.footer {
+    padding-bottom: 42px;
+    background: #1f2531;
+    border-bottom: 18px solid #58647a;
+}
+
+.footer__logo {
+   
+}
+
+.footer__text {
+    font-family: 'Museo Sans 100';
+    font-size: 12px;
+    color: #aaabae;
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding-top: 35px;
+    line-height: 1.3em;
+}
+
+.footer__address {
+    font-family: 'Museo Sans 100';
+    font-size: 12px;
+    color: #aaabae; 
+    max-width: 110px;
+}
+
+.prog {
+    display: flex;
+    align-items: center;
+    color: #b0b1b3;
+    padding-top: 40px;
+}
+
+.prog span {
+    font-family: 'Museo Sans 100';
+    font-size: 15px;
+    color: #b7b8ba;
+    border: 1px solid #acafb3;
+    padding: 2px 5px 1px 5px;
+}
+
+.prog__content {
+    margin-left: 11px;
+}
+
+.prog__design {
+    font-family: 'Museo Sans 100';
+    font-size: 10px;
+}
+
+.prog__couch {
+    font-family: 'Museo Sans 100';
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.prog__policy {
+    margin-top: 25px;
+    line-height: 1em;
+}
+
+.prog__link {
+    font-family: 'Museo Sans 100';
+    font-size: 12px;
+    color: #9c9da1;
+}
+
+.prog__text {
+    font-family: 'Museo Sans 700';
+    font-size: 12px;
+    color: #9c9da1;
+}
+
+.prog__link_border {
+    border-bottom: 2px solid #62646a;
+    width: 90px;
+}
+
+.prog__link_border:hover {
+    
+}
+
+.prog__link:hover {
+    color: #9c9da1;
+}
+
+.prog__link_policy {
+    border-bottom: 1px dotted transparent;
+}
+
+.prog__link_policy:hover {
+    border-bottom: 1px dotted #fff;
+    width: 130px;
+}
+
+.footer__btn {
+    font-family: 'Museo Sans 700';
+    font-size: 13px;
+    color: #fff;
+    background: #1cb883;
+    max-width: 156px;
+    text-align: center;
+    padding: 8px 0 9px;
+    border-bottom: 4px solid #149d6f;
+    margin-top: 67px;
+    margin-left: auto;
+    transition: all 0.3s ease;
+}
+
+.footer__btn i {
+    color: #46e6b0;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.footer__btn:hover {
+    color: #fff;
+    background: #58647a;
+    border-bottom: none; 
+}
+
+.footer__btn:active {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+}
+
+
+/*---------------About company---------------*/
+
+/*-----------Вторая Секция-----------*/
+
+.about {
+    background: #fafafb;
+    padding-top: 57px;
+    padding-bottom: 67px;
+}
+
+
+.about__title {
+    font-size: 38px;
+    color: #081d42;
+}
+
+.about__links {
+    display: flex;
+}
+
+.about__link {
+    font-family: 'Museo Sans 300';
+    font-size: 16px;
+    color: #49556b;
+    border-bottom: 1px solid  #fafafb;
+}
+
+.about__link_border {
+    margin-right: 5px;
+    text-decoration: underline;
+    color: #49556b;
+}
+
+.about__link:hover {
+    color: #888c96;
+    border-bottom: none;
+}
+
+.about__link_border:hover {
+    color: #7e838d;
+}
+
+.about__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about__item {
+    
+}
+
+.about__item a {
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #a1a6af;
+    padding: 7px 10px 8px 16px;
+    border: 2px solid #fafafb;
+}
+
+.about__item a:hover {
+    color: #b81c31;
+    border-radius: 3px;
+    border: 2px solid #b81c31;
+}
+
+/*-----------Третья Секция-----------*/
+
+.odds {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.odds__text_after:after {
+    display: block;
+    content: '';
+    height: 2px;
+    background: #e5e6e8;
+    width: 1170px;
+    margin-top: 53px;
+}
+
+.odds__heading {
+    font-size: 29px;
+    letter-spacing: 0.023em;
+    color: #081d42;
+    margin-bottom: 30px;
+}
+
+.odds__text {
+    font-family: 'Museo Sans 300';
+    font-size: 15px;
+    color: #404048;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+}
+
+.odds__item {
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.odds__par:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -85px;
+    width: 85%;
+    height: 2px;
+    background: #e5e6e8;
+}
+
+.odds__icon {
+    border: 2px solid #102e62;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 26px;
+}
+
+.odds__img {
+
+}
+
+.odds__content {
+    
+}
+
+.odds__title {
+    font-size: 18px;
+    color: #081d42;
+    letter-spacing: 0.02em;
+    margin-bottom: 18px;
+}
+
+.odds__par {
+    font-family: 'Museo Sans 300';
+    font-size: 14px;
+    color: #404048;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    margin-bottom: 32px;
+}
+
+/*-----------Четвертая Секция-----------*/
+
+.photos {
+    padding-top: 10px;
+    padding-bottom: 72px;
+}
+
+.photos__title {
+    font-size: 29px;
+    letter-spacing: 0.02em;
+    color: #081d42;
+    margin-bottom: 38px;
+}
+
+.photos__img {
+    position: relative;
+    width: 100%;
+}
+
+.photos__image {
+    display: block;
+    max-width: 100%;
+}
+
+.photos__overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.photos__img:hover .photos__overlay {
+	opacity: 1;
+    background: rgba(64, 71, 80, 0.6);
+    border: 7px solid #9a97a7;
+}
+
+.photos__img i {
+    font-size: 29px;
+    color: #fff;
+}
+
+
+/*---------------Services---------------*/
+
+/*-----------Вторая Секция-----------*/
+
+.services {
+    background: #fafafb;
+    padding-top: 57px;
+    padding-bottom: 67px;
+}
+
+.services__title {
+    font-size: 38px;
+    color: #081d42;
+}
+
+.services__links {
+    display: flex;
+}
+
+.services__link {
+    font-family: 'Museo Sans 300';
+    font-size: 16px;
+    color: #49556b;
+    border-bottom: 1px solid  #fafafb;
+}
+
+.services__link_border {
+    margin-right: 5px;
+    text-decoration: underline;
+    color: #49556b;
+}
+
+.services__link:hover {
+    color: #888c96;
+    text-decoration: none;
+}
+
+.services__link_border:hover {
+    color: #7e838d;
+}
+
+.services__list {
+    display: flex;
+    align-items: center;
+}
+
+.services__item {
+    margin-left: 30px;
+}
+
+.services__item a {
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    color: #a1a6af;
+    padding: 9px 12px;
+    border: 2px solid #fafafb;
+    display: flex;
+    flex-direction: column;
+}
+
+.services__item span {
+    font-size: 16px;
+    font-family: 'Museo Sans 700', sans-serif;
+}
+
+.services__item a:hover {
+    color: #b81c31;
+    border-radius: 3px;
+    border: 2px solid #b81c31;
+}
+
+/*-----------Третья Секция-----------*/
+
+.law {
+    background: #656e8d url(../img/second2bg.jpg) no-repeat center top / cover;
+    padding: 38px 0;
+}
+
+.law__img {
+    border: 7px solid #b3b6c1;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.law__img:hover {
+    border: 7px solid #b81c31;
+}
+
+.law__title {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.law__intro {
+    font-size: 15px;
+    font-family: 'Museo Sans 300', sans-serif;
+    letter-spacing: 0.02em;
+    color: #fff;
+    line-height: 1.3em;
+    max-width: 335px;
+}
+
+.law__list {
+    border: 2px solid #9a9daa;
+    border-radius: 5px;
+    padding: 20px 1px 7px 27px;
+}
+
+.law__item {
+    font-size: 15px;
+    font-family: 'Museo Sans 300', sans-serif;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+}
+
+.law__item:before {
+    content: '→';
+    color: #fff;
+    margin-right: 7px;
+}
+
+.law__link {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.law__link:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+/*-----------Четвертая Секция-----------*/
+
+.advice {
+    
+}
+
+.advice__title {
+    font-size: 29px;
+    color: #081d42;
+    letter-spacing: 0.02em;
+    margin-bottom: 23px;
+    margin-top: 60px;
+}
+
+.advice__text {
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 15px;
+    color: #404048;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+    line-height: 1.3em;
+}
+
+.form {
+    max-width: 470px;
+    border: 2px solid #e3e4e6;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 28px 11px 28px 30px;
+    background: url(../img/call.jpg) no-repeat 96% 84%;
+    margin-bottom: 55px;
+}
+
+.form__title {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #414449;
+}
+
+.form__application {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.form__btn {
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 14px;
+    color: #b81c31;
+    border: 2px solid #b81c31;
+    border-radius: 3px;
+    text-align: center;
+    padding: 7px 0 11px 0;
+    width: 157px;
+    letter-spacing: 0.02em;
+    background: transparent;
+    transition: all 0.4s ease-in;
+}
+
+.form__btn:hover {
+    color: #fff;
+    background: #b81c31;
+}
+
+.form__btn:active {
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+.form__tel {
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 14px;
+    color: #585f6b;
+    margin-left: 17px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form__tel:hover {
+    color: #b81c31;
+}
+
+.form__text {
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 12px;
+    color: #888d95;
+    letter-spacing: 0.02em;
+    max-width: 230px;
+    line-height: 1.3em;
+    margin-top: 14px;
+}
+
+.advice__sidebar {
+    background: #fafafb;
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+.advice__heading {
+    font-size: 18px;
+    color: #969ca9;
+    margin-bottom: 44px;
+    margin-left: 26px;
+}
+
+.advice__list {
+    border-top: 1px solid #dfdfe8;
+}
+
+.advice__item {
+    font-size: 15px;
+    font-family: 'Museo Sans 700', sans-serif;
+    border-bottom: 1px solid #dfdfe8;
+    padding: 13px 15px 5px 26px;
+    position: relative;
+}
+
+.advice__item::before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    background: #aeaeb9;
+    border-radius: 2px;
+    position: absolute;
+    top: 18px;
+    left: 27px;
+}
+
+.advice__icon:hover {
+    background: #b81c31;
+}
+
+.advice__link {
+    margin-left: 30px;
+    color: #747487;
+    transition: all 0.3s ease;
+}
+
+.advice__link:hover {
+    color: #b81c31;
+}
+
+.reviews {
+    
+}
+
+.reviews__heading {
+    font-size: 18px;
+    color: #969ca9;
+    margin-bottom: 36px;
+    margin-top: 60px;
+    margin-left: 26px;
+}
+
+.reviews__wrap {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reviews__slider {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reviews__btn {
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: #404048;
+}
+
+.reviews__btn:active, .reviews__btn:hover, .reviews__btn:focus {
+    outline: none;
+    border: transparent;
+    box-shadow: none;
+}
+
+.reviews__btn_back {
+    margin-right: 70px;
+}
+
+.reviews__btn_forward {
+    margin-left: 50px;
+}
+
+.reviews__btn i {
+    
+}
+
+.reviews__link i {
+    font-size: 14px;
+    margin-top: 11px;
+}
+
+.reviews__link i:hover {
+    box-shadow: 0 0 10px rgba(0, 142, 255, 1);
+}
+
+.reviews__img {
+    border: 5px solid #646F8D;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.reviews__title {
+    font-size: 15px;
+    font-family: 'Museo Sans 700', sans-serif;
+    color: #747487;
+    margin-top: 8px;
+}
+
+.reviews__text {
+    font-size: 13px;
+    font-family: 'Museo Sans 300', sans-serif;
+    letter-spacing: 0.02em;
+    color: #404048;
+    margin: auto;
+    max-width: 290px;
+    margin-top: 12px;
+    line-height: 1.2em;
+}
+
+.reviews__link {
+    
+}
+
+.reviews__icons {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 27px;
+}
+
+.reviews__icon {
+    height: 11px;
+    width: 11px;
+    background: #aeaeb9;
+    border-radius: 2px;
+    margin-right: 18px;
+    border: none;
+}
+
+.reviews__icon:hover {
+    background: #8b9ab7;
+}
+
+.reviews__icon:active, .reviews__icon:hover, .reviews__icon:focus {
+    outline: none;
+    border: transparent;
+    box-shadow: none;
+}
+
+/*---------------Contacts---------------*/
+
+/*-----------Вторая Секция-----------*/
+
+.contacts {
+    background: #fafafb;
+    padding-top: 57px;
+    padding-bottom: 67px;
+}
+
+.contacts__title {
+    font-size: 38px;
+    color: #081d42;
+}
+
+.contacts__links {
+    display: flex;
+}
+
+.contacts__link {
+    font-family: 'Museo Sans 300';
+    font-size: 16px;
+    color: #49556b;
+    border-bottom: 1px solid  #fafafb;
+}
+
+.contacts__link_border {
+    margin-right: 5px;
+    text-decoration: underline;
+    color: #49556b;
+}
+
+.contacts__link:hover {
+    color: #888c96;
+    text-decoration: none;
+}
+
+.contacts__link_border:hover {
+    color: #7e838d;
+}
+
+.contacts__list {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__item {
+    margin-left: 28px;
+}
+
+.contacts__item a {
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #a1a6af;
+    padding: 9px 12px;
+    border: 2px solid #fafafb;
+}
+
+.contacts__item a:hover {
+    color: #b81c31;
+    border-radius: 3px;
+    border: 2px solid #b81c31;
+}
+
+/*-----------Третья Секция-----------*/
+
+.map {
+    position: relative;
+    min-height: 440px;
+    padding-top: 47px;
+}
+
+.map__yandex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.info {
+    max-width: 470px;
+    width: 100%;
+    background: rgba(111, 124, 150, 0.9);
+    padding: 25px 35px 53px 30px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 2;
+    margin-right: 365px;
+}
+
+.info:before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: -17px;
+    border-radius: 4px 0 0 0;
+    border: 17px solid transparent;
+    border-top: 17px solid rgba(124,132,147,0.8);
+    border-left: 17px solid rgba(124,132,147,0.8);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.info__main {
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+    padding-bottom: 11px;
+    margin-bottom: 40px;
+}   
+
+.info__title {
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    
+}
+
+.info__network {
+    display: flex;
+    align-items: center;
+}
+
+.info__link {
+    max-width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.4s ease-in;
+}
+
+.info__link_fb {
+    padding: 3px 5px 5px 6px;
+}
+
+.info__link_tw {
+    padding: 3px 5px 5px 5px;
+}
+
+.info__link_tg {
+    padding: 3px 7px 6px 4px;
+}
+
+.info__link_fb:hover {  
+    border: 2px solid #2c60a0;
+    color: #3d6ca8;
+}
+
+.info__link_tw:hover {
+    border: 2px solid #21c2ff;
+    color: #43c9fd;
+}
+
+.info__link_tg:hover {
+    border: 2px solid #2ea7d6;
+    color: #25a3d4;
+}
+
+.info__phones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.info__tels {
+
+}
+
+.info__tel {
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 16px;
+    color: #f6f7f8;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.info__tel i {
+    transform: rotate(90deg);
+    margin-right: 9px;
+    font-size: 13px;
+}
+
+.info__tel:hover {
+    color: #4a6089;
+}
+
+.info__text {
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 12px;
+    max-width: 180px;
+    color: #f6f7f8;
+    line-height: 1.4em;
+}
+
+.info__text_add {
+    max-width: 230px;
+    text-align: left;
+}
+
+.info__address {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 16px;
+    color: #f6f7f8; 
+    margin-bottom: 15px;
+}
+
+.info__city {
+    display: flex;
+    line-height: 1.2em;
+}
+
+.info__city i {
+    margin-right: 19px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.info__email {
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 16px;
+    color: #f6f7f8;
+    transition: all 0.3s ease;
+}
+
+.info__email i {
+    margin-right: 11px;
+}
+
+.info__email:hover {
+    color: #4a6089;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------ Media Queries ------ */
+
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+    .menu {
+        justify-content: space-between;
+    }
+    .menu__item {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .tel {
+        margin-left: auto;
+    }
+    .aid__title {
+        width: 270px;
+    }
+    .odds__text_after:after {
+        width: 950px;
+    }
+    .law__title {
+        margin-left: 25px;
+    }
+    .law__intro {
+        margin-left: 25px;
+    }
+    .advice__sidebar {
+        min-height: 100%;
+    }
+    .reviews__btn_back {
+        margin-right: 30px;
+    }
+    .reviews__btn_forward {
+        margin-left: 25px;
+    }
+    .info {
+        margin-right: 165px;
+    }
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+	.menu-burger {
+        display: block;
+        text-align: right;
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .tel {
+    }
+    .menu-burger i {
+        font-size: 26px;
+    }
+    .pro__item {
+        margin-bottom: 60px;
+    }
+    .news__btn {
+        margin-bottom: 50px;
+    }
+    .news__content {
+        padding-top: 10px;
+    }
+    .news__block:after {
+        max-width: 45%;
+        margin-top: 30px;
+    }
+    .footer__btn {
+        display: none;
+    }
+    .footer {
+        padding-top: 40px;
+    }
+    .footer__text {
+        padding-top: 0;
+    }
+    .prog {
+        padding-top: 0;
+    }
+    .about__title {
+        text-align: center;
+    }
+    .about__links {
+        justify-content: center;
+    }
+    .about__list {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .odds__text br {
+        display: none;
+    }
+    .odds__text_after:after {
+        width: 700px;
+    }
+    .odds__par:before {
+        width: 680px;
+    }
+    .services__title {
+        text-align: center;
+    }
+    .services__links {
+        justify-content: center;
+    }
+    .services__list {
+        margin-top: 30px;
+    }
+    .law__title {
+        width: 210px;
+    }
+    .law__intro {
+        max-width: 485px;
+    }
+    .form {
+        max-width: 100%;
+    }
+    .advice__item {
+        margin-bottom: 10px;
+    }
+    .reviews__btn_back {
+        margin-right: 250px;
+    }
+    .reviews__btn_forward {
+        margin-left: 205px;
+    }
+    .contacts__title {
+        text-align: center;
+    }
+    .contacts__links {
+        justify-content: center;
+    }
+    .contacts__list {
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .contacts__item {
+        margin-left: 0;
+    }
+    .info {
+        position: static;
+        top: 0;
+        max-width: none;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .container-fluid_plane {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .map__yandex {
+        position: static;
+    }
+    .info__text {
+        max-width: 360px;
+    }
+    .info__phones {
+        margin-bottom: 23px;
+    }
+    .info__address {
+        margin-bottom: 35px;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .news__wrap {
+       display: flex;
+       flex-direction: column; 
+    }
+    .news__wrap_second {
+        margin-left: 0;
+    }
+    .aid__title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .aid__list {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer__logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .footer__text {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .footer__address {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .prog__content {
+        margin-bottom: 15px;
+        margin: 0 auto;
+    }
+    .prog span {
+       display: none;
+    }
+    .prog__link {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .prog__policy {
+        margin-bottom: 40px;
+    }
+    .footer__btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .odds__text br {
+        display: none;
+    }
+    .odds__text_after:after {
+        width: 550px;
+    }
+    .odds__par:before {
+        width: 560px;
+    }
+    .services__list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .services__item {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .law__img {
+        display: flex;
+        margin: 0 auto;
+    }
+    .law__title {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;   
+    }
+    .law__intro {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .reviews__btn_back {
+        margin-right: 150px;
+    }
+    .reviews__btn_forward {
+        margin-left: 105px;
+    }
+    .contacts__list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contacts__item {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .info__phones {
+        display: block;
+    }
+    .info__tels {
+        margin-bottom: 20px;
+    }
+    .info__address {
+        display: block;
+    }
+    .info__city {
+        margin-bottom: 20px;
+        max-width: 180px;
+    }
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+    .menu-burger {
+        margin-left: 20px;
+    }
+    .logo__img {
+        max-width: 130%;
+    }
+    .tel {
+        max-width: 56px;
+    }
+    .tel span {
+        display: none;
+    }
+    .tel i {
+        color: #fff;
+    }
+    .offer__title {
+    font-size: 40px;
+    }
+    .offer__text {
+        font-size: 26px;
+    }
+	.prog span {
+       margin-bottom: 15px;
+    }
+    .about__list {
+        flex-direction: column;
+    }
+    .about__item {
+        margin-bottom: 10px;
+    }
+    .odds__text {
+        
+    }
+    .odds__text br {
+        display: none;
+    }
+    .odds__text_after:after {
+        display: none;
+        border: none;
+    }
+    .odds__text_before {
+        border-bottom: 2px solid #e5e6e8;
+        padding-bottom: 30px;
+    }
+    .odds__text_after {
+        margin-bottom: 30px;
+    }
+    .odds__par:before {
+        width: 620px;
+    }
+    .photos__img {
+        margin-bottom: 30px;
+    }
+    .photos__image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .odds__text_after:after {
+        width: 400px;
+    }
+    .odds__par:before {
+        width: 400px;
+    }
+    .form {
+        max-width: 100%;
+    }
+    .reviews__btn_back {
+        margin-right: 40px;
+    }
+    .reviews__btn_forward {
+        margin-left: 25px;
+    }
+    .form__tel {
+        font-size: 11px;
+    }
+    .form {
+        background: none;
+    }
+}
